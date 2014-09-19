@@ -14,9 +14,16 @@
   width: 320px;
 }
 
+.jumbotron h1 {
+  font-weight: 700;
+  font-size: 5em;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+  padding: 50px 0;
+}
+
 .jumbotron h2 {
-  position: relative;
-  bottom: 0;
+  font-weight: 200;
+  padding-top: 10%;
 }
 
 /*custom styles*/
@@ -30,23 +37,35 @@ footer {
   color: white;
   background-color: #182a4a;
   padding: 40px 0;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2em;
 }
 
-footer span {
-  padding-right: 20px;
+#intro .row {
+  padding-bottom: 50px;
 }
 
-footer #team-logos {
-  background: url(../img/cfa+charlex-logos.png) no-repeat;) no-repeat;
-  background-size: 100%;
+#intro h3 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-footer #github-logo {
-  background: url(../img/github-icon.png) no-repeat;) no-repeat;
-  background-size: 100%;
+#intro h4 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+#intro p {
+  font-weight: 200;
+  font-size: 1.7em;
 }
 
 #contact {
-  background-color: #59b390;
+  background-color: rgb(89,179,144);
   color: white;
+  font-weight: 200;
+  font-size: 2.3em;
+  padding: 50px 0;
 }

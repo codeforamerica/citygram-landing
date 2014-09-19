@@ -21,8 +21,8 @@
     <div class="container">
       <div class="row">
         <div class="logo"></div>
-        <h1>Subscribe to your city.</h1>
-        <h2>Get updates on the topics and areas you care about</h2>
+        <h1 class="col-md-12">Subscribe to your <select name="city"></select>.</h1>
+        <h2 class="col-md-4">Get updates on the topics and areas you care about</h2>
       </div>
     </div>
   </div>
@@ -30,7 +30,9 @@
   <section id="intro">
     <div class="container">
       <div class="row">
-        <p>Curious about the construction on your street? How about the new restaurant going in down the block? Want to know when there's a code violation in your area?</p>
+        <h4>Curious about the construction on your street?</h4>
+        <h4>How about the new restaurant going in down the block?</h4>
+        <h4>Want to know when there's a code violation in your area?</h4>
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -48,7 +50,13 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <p>Curious about the construction on your street? How about the new restaurant going in down the block? Want to know when there's a code violation in your area?</p>
+        <div class="col-md-3">
+          <img src="../img/text-bubble.png">
+        </div>
+        <div class="col-md-9">
+        <p>I want a Citygram in <input placeholder="my city" type="text"> . My name is <input placeholder="FULL NAME" type="text"> and my email is <input placeholder="you@email.com" type="text"> . Some topics I'd want: <input placeholder="any ideas here" type="text"> .</p>
+        <button type="button" class="btn btn-default">Submit</button>
+        </div>
       </div>
     </div>
   </section>
@@ -56,8 +64,13 @@
   <footer>
     <div class="container">
       <div class="row">
-        <span>a project of</span><span id="team-logos"></span>
-        <span id="github-logo"></span>
+        <div class="col-md-2"><h5>a project of</h5></div>
+        <div class="col-md-4">
+          <img src="../img/cfa+charlex-logos.png" width="100%">
+        </div>
+        <div class="col-md-2 col-md-offset-4">
+          <img class="pull-right" src="../img/github-icon.png" widht="100%">
+        </div>
       </div>
     </div>
   </footer>
