@@ -1,0 +1,52 @@
+/*bootstrap modifications*/
+
+.jumbotron {
+  background: url(../img/background-illustration.jpg) no-repeat;
+  background-size: 100%;
+  height: 700px;
+  color: white;
+}
+
+.jumbotron .logo {
+  background: url(../img/logo-white.png) no-repeat;
+  background-size: 272px 68px;
+  height: 80px;
+  width: 320px;
+}
+
+.jumbotron h2 {
+  position: relative;
+  bottom: 0;
+}
+
+/*custom styles*/
+
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #182A4A;
+}
+
+footer {
+  color: white;
+  background-color: #182a4a;
+  padding: 40px 0;
+}
+
+footer span {
+  padding-right: 20px;
+}
+
+footer #team-logos {
+  background: url(../img/cfa+charlex-logos.png) no-repeat;) no-repeat;
+  background-size: 100%;
+}
+
+footer #github-logo {
+  background: url(../img/github-icon.png) no-repeat;) no-repeat;
+  background-size: 100%;
+}
+
+#contact {
+  background-color: #59b390;
+  color: white;
+}
