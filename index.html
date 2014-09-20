@@ -21,7 +21,20 @@
     <div class="container">
       <div class="row">
         <div class="logo"></div>
-        <h1 class="col-md-12">Subscribe to your <select name="city"></select>.</h1>
+      </div>
+      <div class="row">
+        <h1 class="col-md-12">Subscribe to
+          <span class="dropdown">
+            <select id="select-city">
+              <option value="your-city"><span id="your-city">your city</span></option>
+              <option value="Charlotte">Charlotte</option>
+              <option value="https://seattlegram.herokuapp.com/">Seattle</option>
+              <option value="https://lexgram.herokuapp.com/">Lexington</option>
+            </select>
+          </span>.
+        </h1>
+      </div>
+      <div class="row">
         <h2 class="col-md-4">Get updates on the topics and areas you care about</h2>
       </div>
     </div>
@@ -75,10 +88,18 @@
     </div>
   </footer>
 
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- take me to my city! -->
+  <script>
+  document.getElementById("select-city").onchange = function() {
+      if (this.selectedIndex!==0) {
+          window.location.href = this.value;
+      }        
+  };
+  </script>
 
 </body>
 </html>
