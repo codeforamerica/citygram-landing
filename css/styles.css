@@ -62,6 +62,24 @@ select {
   -webkit-appearance: none;
 }
 
+.submit-btn {
+  color: #fff;
+  text-align: center;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
+  width: 240px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover, .submit-btn.selected {
+  background: #fff;
+  color: rgb(89,179,144);
+  cursor: pointer;
+}
+
 #intro .row {
   padding-bottom: 50px;
 }
@@ -83,13 +101,110 @@ select {
 }
 
 #contact {
-  background-color: rgb(89,179,144);
+  background-color: #00CE99;
   color: white;
   font-weight: 200;
   font-size: 2.3em;
   padding: 50px 0;
 }
 
-.dropdown {
+#contact .contact-form {
+  padding-left: 7%;
+}
 
+#contact input {
+  color: #fff;
+  background-color: #00CE99;
+  border: 2px dashed #fff;
+  border-radius: 0;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+#contact .text-bubble {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#contact .city ::-webkit-input-placeholder {
+  color: #FFE090;
+  font-weight: 700;
+}
+
+#contact .city :-moz-placeholder { /* Firefox 18- */
+  color: #FFE090;  
+  font-weight: 700;
+}
+
+#contact .city ::-moz-placeholder {  /* Firefox 19+ */
+  color: #FFE090; 
+  font-weight: 700; 
+}
+
+#contact .city :-ms-input-placeholder {  
+  color: #FFE090;
+  font-weight: 700;  
+}
+
+#contact .name ::-webkit-input-placeholder {
+  color: #FFC1AF;
+  font-weight: 700;
+}
+
+#contact .name :-moz-placeholder { /* Firefox 18- */
+  color: #FFC1AF;  
+  font-weight: 700;
+}
+
+#contact .name ::-moz-placeholder {  /* Firefox 19+ */
+  color: #FFC1AF; 
+  font-weight: 700; 
+}
+
+#contact .name :-ms-input-placeholder {  
+  color: #FFC1AF;
+  font-weight: 700;  
+}
+
+#contact .email ::-webkit-input-placeholder {
+  color: #FFF;
+  font-weight: 700;
+}
+
+#contact .email :-moz-placeholder { /* Firefox 18- */
+  color: #FFF;  
+  font-weight: 700;
+}
+
+#contact .email ::-moz-placeholder {  /* Firefox 19+ */
+  color: #FFF; 
+  font-weight: 700; 
+}
+
+#contact .email :-ms-input-placeholder {  
+  color: #FFF;
+  font-weight: 700;  
+}
+
+#contact .ideas ::-webkit-input-placeholder {
+  color: #ccffcc;
+  font-weight: 700;
+}
+
+#contact .ideas :-moz-placeholder { /* Firefox 18- */
+  color: #ccffcc;  
+  font-weight: 700;
+}
+
+#contact .ideas ::-moz-placeholder {  /* Firefox 19+ */
+  color: #ccffcc; 
+  font-weight: 700; 
+}
+
+#contact .ideas :-ms-input-placeholder {  
+  color: #ccffcc;
+  font-weight: 700;  
 }
