@@ -1,4 +1,4 @@
 citygram-landing
 ================
 
-Land page for Citygram
+Landing page for [Citygram](http://github.com/codeforamerica/citygram)!
