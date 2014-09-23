@@ -26,7 +26,8 @@
         <h1 class="col-md-12">Subscribe to
           <span class="dropdown">
             <select id="select-city">
-              <option value="your-city"><span id="your-city">your city</span></option>
+              <option value="your-city"><span id="your-city">notifications in</span></option>
+              <option value="your-city">your city</option>
               <option value="https://citygram-staging.herokuapp.com/">Charlotte</option>
               <option value="https://seattlegram.herokuapp.com/">Seattle</option>
               <option value="https://lexgram.herokuapp.com/">Lexington</option>
@@ -66,7 +67,7 @@
         <div class="col-md-2 text-bubble">
           <img src="./img/text-bubble.png">
         </div>
-        <div class="col-md-10 contact-form">
+        <div class="col-md-10 contact-form" id="ss-form">
           <p>I want a Citygram in <span class="city"><input placeholder="MY CITY" type="text"></span> . My name is <span class="name"><input placeholder="FULL NAME" type="text"></span> and my email is <span class="email"><input placeholder="YOU@EMAIL" type="text"></span>. Some topics I'd want: <span class="ideas"><input placeholder="ANY IDEAS HERE" type="text"></span>.</p>
           <div class="submit-btn">Submit</div>
         </div>
@@ -94,11 +95,22 @@
 
   <!-- take me to my city! -->
   <script>
-  document.getElementById("select-city").onchange = function() {
-      if (this.selectedIndex!==0) {
-          window.location.href = this.value;
-      }
+
+  var app = {};
+  app.scrollToElement = function(el) {
+    $('html,body').animate({
+      scrollTop: el.offset().top
+    }, 800);
   };
+
+  $("#select-city").change(function(e) {
+    var value = $(e.target).val();
+    if (value === "your-city") {
+      app.scrollToElement($("#ss-form"));
+    } else {
+      window.location.href = value;
+    }
+  });
   </script>
 
 </body>
