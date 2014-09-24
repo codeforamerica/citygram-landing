@@ -67,9 +67,15 @@
         <div class="col-md-2 text-bubble">
           <img src="./img/text-bubble.png">
         </div>
-        <div class="col-md-10 contact-form" id="ss-form">
-          <p>I want a Citygram in <span class="city"><input placeholder="MY CITY" type="text"></span> . My name is <span class="name"><input placeholder="FULL NAME" type="text"></span> and my email is <span class="email"><input placeholder="YOU@EMAIL" type="text"></span>. Some topics I'd want: <span class="ideas"><input placeholder="ANY IDEAS HERE" type="text"></span>.</p>
-          <div class="submit-btn">Submit</div>
+        <div class="col-md-10 contact-form">
+          <form action="https://docs.google.com/a/codeforamerica.org/forms/d/1JB1rrofsW3H310KSbmWXRiLjUbVKU06dUiGvratQRfw/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+            <p>I want a Citygram in <span class="city">
+              <input name="entry.2092787615" placeholder="MY CITY" type="text"></span> . My name is <span class="name">
+              <input name="entry.310801395" placeholder="FULL NAME" type="text"></span> and my email is <span class="email">
+               <input name="entry.1324690126" placeholder="YOU@EMAIL" type="text"></span>. Some topics I'd want: <span class="ideas">
+               <input name="entry.311709427" placeholder="ANY IDEAS HERE" type="text"></span>.</p>
+            <div class="submit-btn" onclick="$('#ss-form').submit()">Submit</div>
+          </form>
         </div>
       </div>
     </div>
