@@ -27,6 +27,7 @@
           <span class="dropdown">
             <select id="select-city">
               <option value="your-city"><span id="your-city">your city</span></option>
+              <option value="your-city">add my city</option>
               <option value="https://citygram-staging.herokuapp.com/">Charlotte</option>
               <option value="https://seattlegram.herokuapp.com/">Seattle</option>
               <option value="https://lexgram.herokuapp.com/">Lexington</option>
@@ -100,11 +101,22 @@
 
   <!-- take me to my city! -->
   <script>
-  document.getElementById("select-city").onchange = function() {
-      if (this.selectedIndex!==0) {
-          window.location.href = this.value;
-      }
+
+  var app = {};
+  app.scrollToElement = function(el) {
+    $('html,body').animate({
+      scrollTop: el.offset().top
+    }, 800);
   };
+
+  $("#select-city").change(function(e) {
+    var value = $(e.target).val();
+    if (value === "your-city") {
+      app.scrollToElement($("#ss-form"));
+    } else {
+      window.location.href = value;
+    }
+  });
   </script>
 
 </body>
