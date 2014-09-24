@@ -1,10 +1,15 @@
 /*bootstrap modifications*/
 
 .jumbotron {
-  background: url(../img/background-illustration.jpg) no-repeat;
+  background: url(../img/background-illustration-lg.jpg) no-repeat center center;
   /*background-size: 100%;*/
   height: 650px;
   color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .jumbotron .logo {
@@ -23,7 +28,7 @@
 
 .jumbotron h2 {
   font-weight: 200;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 /*custom styles*/
