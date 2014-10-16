@@ -227,7 +227,26 @@ select {
   font-weight: 700;  
 }
 
-/*media queries*/
+/* media queries */
+
+@media (max-width: 900px) {
+
+  #intro span.intro-q {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #intro .row h3 {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+
+  #intro .row p {
+    font-size: 1.8em;
+    padding: 0 20px 15px 20px;
+  }
+
+}
 
 @media (max-width: 675px) {
 
@@ -259,7 +278,6 @@ select {
   }
 
   #intro .row p {
-    font-weight: 200;
     font-size: 1.5em;
     padding: 0 20px 15px 20px;
   }
