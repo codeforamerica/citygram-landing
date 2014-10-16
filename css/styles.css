@@ -248,7 +248,7 @@ select {
 
 }
 
-@media (max-width: 675px) {
+@media (max-width: 600px) {
 
   .jumbotron {
     background: url(../img/background-600.jpg) no-repeat center center;
